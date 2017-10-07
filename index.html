@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>hometask-js-02</title>
+	<title>js-3</title>
 </head>
 <body>
 
 <script>
-	;(function() {
-		var login, password;
-		login = prompt("Пожалуйста, введите логин", "0");
+nextPrime:
+  for (var i = 2; i <= 10; i++) {
 
+    for (var j = 2; j < i; j++) {
+      if (i % j == 0) continue nextPrime;
+    }
 
-		if (login == "Админ") {
-			alert(password);
-			password = prompt("Введите пароль", "0");
-				if (password == "Чёрный Властелин") {
-				alert("Добро пожаловать!");
-				} else if (escape) {
-				alert("Вход отменён");
-				} else {
-				alert("Я вас не знаю");
-			}
-		}else if (escape) {
-			alert("Вход отменён");
-		} else {
-			alert("Я вас не знаю");
-		}
-
-
-
-	})();
+    alert( i ); // простое
+  }
 </script>
 
 </body>
